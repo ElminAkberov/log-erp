@@ -30,8 +30,6 @@ interface Customer {
   name: string;
   email: string;
   phone: string;
-  status: "Active" | "Inactive";
-  orders: number;
 }
 
 export default function CustomersTable({
@@ -103,7 +101,9 @@ export default function CustomersTable({
                     <DialogHeader>
                       <DialogTitle>{c.name}</DialogTitle>
                       <DialogDescription>
-                        {isDetailLoading && <p className="text-center">Loading...</p>}
+                        {isDetailLoading && (
+                          <p className="text-center">Loading...</p>
+                        )}
                         {!isDetailLoading && customerDetail && (
                           <>
                             Email: {customerDetail.customer?.email}
