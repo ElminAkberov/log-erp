@@ -117,7 +117,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             >
               <Link href="/dashboard">
                 <IconTruck className="!size-5" />
-                <span className="text-base font-semibold">166 Logistic</span>
+                <span className="text-base font-semibold ">166 Logistic</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
