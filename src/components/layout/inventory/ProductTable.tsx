@@ -57,6 +57,7 @@ export default function ProductTable({ products }: ProductProps) {
           <Table>
             <TableHeader>
               <TableRow>
+                <TableHead>Product ID</TableHead>
                 <TableHead>Name</TableHead>
                 <TableHead>SKU</TableHead>
                 <TableHead>Category</TableHead>
@@ -68,6 +69,7 @@ export default function ProductTable({ products }: ProductProps) {
             <TableBody>
               {products.map((p) => (
                 <TableRow key={p._id}>
+                  <TableCell>{p._id}</TableCell>
                   <TableCell>{p.name}</TableCell>
                   <TableCell>{p.sku}</TableCell>
                   <TableCell>{p.category}</TableCell>
