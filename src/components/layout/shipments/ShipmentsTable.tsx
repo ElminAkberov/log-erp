@@ -107,7 +107,9 @@ export default function ShipmentsTable({
           {filtered.map((s) => (
             <TableRow key={s._id}>
               <TableCell>
-                {typeof s.orderId === "string" ? s.orderId : s.orderId._id}
+                {typeof s.orderId === "string"
+                  ? s.orderId
+                  : s.orderId?._id ?? "Unknown"}
               </TableCell>
               <TableCell className="text-center">{s.carrier}</TableCell>
               <TableCell>
