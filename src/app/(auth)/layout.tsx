@@ -20,7 +20,7 @@ export default function LoginLayout({
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-center">
-          <div className="w-full max-w-xs">{children}</div>
+          <div className="w-full w-max">{children}</div>
         </div>
       </div>
       <div className="relative hidden lg:block">
